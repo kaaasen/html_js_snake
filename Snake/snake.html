@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+	<audio id="chomp" src="sounds/chomp.mp3"></audio>
+	<audio id="music" src="sounds/music.mp3"></audio>
+    <link rel="stylesheet" href="snake.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <title>Kim Aasen | Web Design and Development</title>
+  </head>
+  <body>
+    <header>
+      <div class="header-left">
+        <h1>Kim Aasen | Web Design and Development</h1>
+      </div>
+	  <div class="header-right">
+		<a href="#" class="header-link">Home</a>
+		<a href="blog.html" class="header-link" target="main-frame">Blog</a>
+		<a href="#" class="header-link">Games</a>
+	  </div>	  
+    </header>
+    <main>
+		<style>
+			.wrapper {
+			  width: 100%;
+			  display: flex;
+			}
+			#high-scores {
+			  width: 40%;
+			}
+			#game-container {
+			  width: 60%;
+			}
+		  </style>
+		  <div class="wrapper">
+			<div id="high-scores">
+			  <h2>High Scores</h2>
+			  <table class="scores">
+				<thead>
+				  <tr>
+					<th>Score</th>
+				  </tr>
+				</thead>
+				<tbody>
+				  <tr>
+					<td>1000</td>
+				  </tr>
+				  <tr>
+					<td>950</td>
+				  </tr>
+				  <tr>
+					<td>800</td>
+				  </tr>
+				  <tr>
+					<td>700</td>
+				  </tr>
+				  <tr>
+					<td>650</td>
+				  </tr>
+				</tbody>
+			  </table>			  
+			</div>
+			<div id="game-container">
+			  <div id="board"></div>
+			  <div id="score-timer">
+				<div id="score">Score: 0</div>
+				<div id="timer">00:00</div>
+			  </div>
+			</div>
+		  </div>
+		  
+	  </main>
+	  <div class="footer">
+		<div class="icon"></div>
+		<div class="header-link">Kim Aasen</div>
+	  </div>
+	  <script src="snake.js"></script>
+	</body>
+</html>
